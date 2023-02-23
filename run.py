@@ -25,7 +25,8 @@ for x in BIST_Stocks:
       check_moving_averages = True
 
     if(check_oscillators and check_moving_averages):
-      message = str(stock.symbol) + " " + "\nOscillators : "+str(m_oscillators['RECOMMENDATION']) + "\nMoving Averages : "+str(m_moving_averages['RECOMMENDATION']) + "\n__________________________________"
+      message = str(stock.symbol) + " " + "\n Oscillators : "+str(m_oscillators['RECOMMENDATION']) + "\n Moving Averages : "+str(m_moving_averages['RECOMMENDATION'])
+
       print(message)
       temp_message_array.append(message)
       
@@ -33,24 +34,4 @@ for x in BIST_Stocks:
     pass
 m_GUI.setListbox(window=m_GUI_Window, messages=temp_message_array)
 m_GUI_Window.mainloop()
-#print(tesla.get_analysis().indicators["open"] )
-#print(tesla.get_analysis().indicators["close"] )
-#print(tesla.get_analysis().indicators["high"] )
-#print(tesla.get_analysis().indicators["low"] )
-#print(tesla.get_analysis().indicators["volume"] )
-
-#print(tesla.get_analysis().oscillators)
-#print(tesla.get_analysis().moving_averages)
-
-#open = tesla.get_analysis().indicators["open"]
-#close = tesla.get_analysis().indicators["close"]
-#MOM = tesla.get_analysis().indicators["Mom"]
-#RSI = tesla.get_analysis().indicators["RSI"]
-#MACD = tesla.get_analysis().indicators["MACD.macd"]
-
-#print("Open :" + str(open))
-#print("Close :" + str(close))
-#print("Momentum :" + str(MOM))
-#print("RSI :" + str(RSI))
-#print("MACD :" + str(MACD))
 
