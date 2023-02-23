@@ -9,5 +9,14 @@ def setWindow():
 
 def setListbox(window,messages):
     var = tk.Variable(value=messages)
-    m_listbox = tk.Listbox(window, listvariable=var, bg="#856ff8", fg="#fff",font=10, height=6, selectmode=tk.EXTENDED)
+    m_listbox = tk.Listbox(window, listvariable=var, bg="#856ff8", fg="#fff",font=10, height=20,width=50 ,selectmode=tk.EXTENDED)
     m_listbox.pack()
+
+
+
+#m_array =["a","b","c","d","e","f"]
+
+
+#m_window = setWindow()
+#setListbox(m_window, m_array)
+#m_window.mainloop()
