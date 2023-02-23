@@ -1,10 +1,12 @@
 import tkinter as tk
 
-def setGUI(message):
-
+def setWindow():
     window = tk.Tk()
-    window.geometry("500x200")
+    window.geometry("500x500")
     window["background"] ='#856ff8'
-    greeting = tk.Label(text=message, bg='#856ff8', fg='#fff', padx=10, pady=10, font=10)
-    greeting.pack()
-    window.mainloop()
+    return window
+
+
+def setListbox(window,messages):
+    m_listbox = tk.Listbox(window, listvariable=messages, bg="#856ff8", fg="#fff",font=10)
+    m_listbox.pack()
