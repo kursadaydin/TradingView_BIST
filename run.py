@@ -25,6 +25,7 @@ for x in BIST_Stocks:
 
     if(check_oscillators and check_moving_averages):
       message = str(stock.symbol) + " " + "\nOscillators : "+str(m_oscillators['RECOMMENDATION']) + "\nMoving Averages : "+str(m_moving_averages['RECOMMENDATION']) + "\n__________________________________"
+      print(message)
       temp_message_array.append(message)
 
   

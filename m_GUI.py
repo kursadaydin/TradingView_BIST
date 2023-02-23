@@ -8,5 +8,6 @@ def setWindow():
 
 
 def setListbox(window,messages):
-    m_listbox = tk.Listbox(window, listvariable=messages, bg="#856ff8", fg="#fff",font=10)
+    var = tk.Variable(value=messages)
+    m_listbox = tk.Listbox(window, listvariable=var, bg="#856ff8", fg="#fff",font=10, height=6, selectmode=tk.EXTENDED)
     m_listbox.pack()
