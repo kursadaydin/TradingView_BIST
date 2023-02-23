@@ -1,0 +1,2 @@
+# TradingView_BIST
+ 
